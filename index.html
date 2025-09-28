@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>three.js webgl - geometry - minecraft</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- CSS externo -->
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- 🔹 Navbar -->
+  <nav id="navbar">
+    <span class="brand">three.js demo</span>
+    <span class="links">Link: <a href="https://threejs.org/examples/?q=mine#webgl_geometry_minecraft" target="_blank">Página oficial</a></span>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div id="container"></div>
+  <div id="info">
+    <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -
+    <a href="http://www.minecraft.net/" target="_blank" rel="noopener">minecraft</a> demo.
+    featuring <a href="http://painterlypack.net/" target="_blank" rel="noopener">painterly pack</a><br/>
+    (left click: forward, right click: backward)
+  </div>
+
+  <!-- Importmap para módulos -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "../build/three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+  </script>
+
+  <!-- Lógica separada -->
+  <script type="module" src="js/main.js"></script>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>Desarrollado por <strong>Carmen Trejo</strong></p>
+  </footer>
+</body>
+</html>
